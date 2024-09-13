@@ -1,13 +1,10 @@
 <div align="center">
-    <h1>
-    DepMamba
-    </h1>
-    <p>
-    Official PyTorch code for extracting features and training downstream models with <br>
-    <b><em>emotion2vec: Self-Supervised Pre-Training for Speech Emotion Representation</em></b>
-    </p>
     <p>
     <img src="./mamba_logo.png" alt="DepMamba Logo" style="height: 200px;">
+    </p>
+     <p>
+    Official PyTorch code for extracting features and training downstream models with <br>
+    <b><em>DepMamba: Progressive Fusion Mamba for Multimodal Depression Detection</em></b>
     </p>
     <p>
     </p>
