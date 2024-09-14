@@ -22,7 +22,7 @@ In this paper, we propose a **T**emporal-aware b**I**-direction **M**ulti-scale 
 
 <div align="center">
     <p>
-    <img src="./src/main.png" alt="DepMamba pipeline" style="height: 450px;">
+    <img src="./src/main.png" alt="DepMamba pipeline" style="weight: 350px;">
     </p>
     
 
