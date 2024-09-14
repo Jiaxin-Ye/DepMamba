@@ -7,6 +7,7 @@
     <b><em>DepMamba: Progressive Fusion Mamba for Multimodal Depression Detection</em></b>
     </p>
     <p>
+    <img src="./src/efficiency.png" alt="DepMamba pipeline" style="height: 250px;">
     </p>
     <a href="https://github.com/Jiaxin-Ye/DepMamba"><img src="https://img.shields.io/badge/Platform-linux-lightgrey" alt="version"></a>
     <a href="https://github.com/Jiaxin-Ye/DepMamba"><img src="https://img.shields.io/badge/Python-3.8+-orange" alt="version"></a>
@@ -23,9 +24,7 @@ In this paper, we propose a **T**emporal-aware b**I**-direction **M**ulti-scale 
     <p>
     <img src="./src/main.png" alt="DepMamba pipeline" style="height: 450px;">
     </p>
-    <p>
-    <img src="./src/efficiency.png" alt="DepMamba pipeline" style="height: 300px;">
-    </p>
+    
 
 </div>
 
