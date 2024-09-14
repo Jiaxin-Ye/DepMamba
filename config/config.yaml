@@ -1,0 +1,50 @@
+data_dir: "/your_dataset_path"
+train_gender: both
+test_gender: both
+
+model: DepMamba
+dataset: dvlog #dvlog or lmvd
+train: true
+epochs: 120
+batch_size: 16
+learning_rate: 8e-5
+lr_scheduler: cos
+if_wandb: false
+save_dir: "/your_save_path"
+device:
+  - "cuda"
+
+# Mamba parameters
+mmmamba:
+  audio_input_size: 25 # LDDs for D-Vlog
+  video_input_size: 136
+  mm_input_size: 256
+  mm_output_sizes: [256]
+  dropout: 0.1
+  d_ffn: 1024 
+  num_layers: 1
+  activation: 'GELU'
+  causal: false
+
+  mamba_config:
+    d_state: 12 
+    expand: 4 
+    d_conv: 4 
+    bidirectional: true
+
+mmmamba_lmvd:
+  audio_input_size: 128 # VGGish for LMVD
+  video_input_size: 136
+  mm_input_size: 256
+  mm_output_sizes: [256]
+  dropout: 0.1
+  d_ffn: 1024 
+  num_layers: 1
+  activation: 'GELU'
+  causal: false
+
+  mamba_config:
+    d_state: 16 
+    expand: 4 
+    d_conv: 4 
+    bidirectional: true   
