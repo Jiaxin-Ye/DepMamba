@@ -19,6 +19,16 @@
 
 In this paper, we propose a **T**emporal-aware b**I**-direction **M**ulti-scale Network, termed **TIM-Net**, which is a novel temporal emotional modeling approach to learn multi-scale contextual affective representations from various time scales. 
 
+<div align="center">
+    <p>
+    <img src="./src/main.png" alt="DepMamba pipeline" style="height: 450px;">
+    </p>
+    <p>
+    <img src="./src/efficiency.png" alt="DepMamba pipeline" style="height: 300px;">
+    </p>
+
+</div>
+
 ## 📖 Usage:
 
 
@@ -80,18 +90,11 @@ $ python main.py --train True --train_gender both --test_gender both --epochs 12
 
 #### Testing
 
-If you want to test your model on 10-fold cross-validation manner with `X' random seed, you can run the following commands:
-
 ```bash
-$ python main.py --mode test --data CASIA  --test_path ./Test_Models/CASIA_32 --split_fold 10 --random_seed 32
-$ python main.py --mode test --data EMODB  --test_path ./Test_Models/EMODB_46 --split_fold 10 --random_seed 46
-$ python main.py --mode test --data EMOVO  --test_path ./Test_Models/EMOVO_1 --split_fold 10 --random_seed 1
-$ python main.py --mode test --data IEMOCAP  --test_path ./Test_Models/IEMOCAP_16 --split_fold 10 --random_seed 16
-$ python main.py --mode test --data RAVDE  --test_path ./Test_Models/RAVDE_46 --split_fold 10 --random_seed 46
-$ python main.py --mode test --data SAVEE  --test_path ./Test_Models/SAVEE_44 --split_fold 10 --random_seed 44
-```
+$ python main.py --train False --test_gender both --epochs 120 --batch_size 16 --learning_rate 1e-4 --model DepMamba --dataset dvlog --gpu 0
 
-You can download our model files from our shared [link]( https://pan.baidu.com/s/1EtjhuljeHwvIjYG8hYtMXQ?pwd=HDF5) to `Test_Models` folder. 
+$ python main.py --train False --train_gender both --test_gender both --epochs 120 --batch_size 16 --learning_rate 1e-4 --model DepMamba --dataset lmvd --gpu 0
+```
 
 
 ## 📖 Citation
@@ -99,12 +102,14 @@ You can download our model files from our shared [link]( https://pan.baidu.com/s
 - If you find this project useful for your research, please cite [our paper](https://arxiv.org/abs/2211.08233):
 
 ```bibtex
-@inproceedings{yedepmamba,
-  title={Temporal Modeling Matters: A Novel Temporal Emotional Modeling Approach for Speech Emotion Recognition},
-  author = {Ye, Jiaxin and Wen, Xincheng and Wei, Yujie and Xu, Yong and Liu, Kunhong and Shan, Hongming},
-  booktitle = {ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece, June 4-10, 2023},
-  pages={1--5},
-  year = {2023}
+@article{yedepmamba,
+  title={DepMamba: Progressive Fusion Mamba for Multimodal Depression Detection},
+  author = {Jiaxin Ye and Junping Zhang and Hongming Shan},
+  journal      = {CoRR},
+  volume       = {abs/2407.00024},
+  year         = {2024},
+  eprinttype    = {arXiv},
+  eprint       = {2407.00024},
 }
 ```
 
