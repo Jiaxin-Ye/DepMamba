@@ -1,6 +1,6 @@
 <div align="center">
     <p>
-    <img src="./src/mamba_logo.png" alt="DepMamba Logo" style="height: 200px;">
+    <img src="./src/mamba_logo.png" alt="DepMamba Logo" style="weight: 200px;">
     </p>
      <p>
     Official PyTorch code for training and inference pipeline for <br>
