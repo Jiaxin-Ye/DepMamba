@@ -17,6 +17,11 @@
 </div>
 
 
+### 📰 News
+* 25/09/2024 Released the arxiv version [paper](https://arxiv.org/abs/2409.15936).
+* 25/09/2024 Released the training code.
+  
+
 ### 📕Introduction
 
 In this work, we propose an audio-visual progressive fusion Mamba model for efficient multimodal depression detection,  termed **DepMamba**. Specifically, the DepMamba features two core designs: hierarchical contextual modeling and progressive multimodal fusion. First, we introduce CNN and Mamba blocks to extract features from local to global scales, enriching contextual representation within long-range sequences. 
