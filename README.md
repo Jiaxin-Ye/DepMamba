@@ -105,17 +105,17 @@ $ python main.py --train False --test_gender both --epochs 120 --batch_size 16 -
 
 ## 📖 Citation
 
-- If you find this project useful for your research, please cite [our paper](https://arxiv.org/abs/2211.08233):
+- If you find this project useful for your research, please cite [our paper](https://arxiv.org/abs/2409.15936):
 
 ```bibtex
 @article{yedepmamba,
   title={DepMamba: Progressive Fusion Mamba for Multimodal Depression Detection},
   author = {Jiaxin Ye and Junping Zhang and Hongming Shan},
   journal      = {CoRR},
-  volume       = {abs/xxxxxx},
+  volume       = {abs/2409.15936},
   year         = {2024},
   eprinttype    = {arXiv},
-  eprint       = {xxxxxx},
+  eprint       = {2409.15936},
 }
 ```
 
