@@ -18,6 +18,7 @@
 
 
 ### 📰 News
+* 21/12/2024 DepMamba has been accepted by the 50th ICASSP conference.
 * 25/09/2024 Released the arxiv version [paper](https://arxiv.org/abs/2409.15936).
 * 25/09/2024 Released the training code.
   
@@ -110,14 +111,12 @@ $ python main.py --train False --test_gender both --epochs 120 --batch_size 16 -
 - If you find this project useful for your research, please cite [our paper](https://arxiv.org/abs/2409.15936):
 
 ```bibtex
-@article{yedepmamba,
+@inproceedings{yedepmamba,
   title={DepMamba: Progressive Fusion Mamba for Multimodal Depression Detection},
   author = {Jiaxin Ye and Junping Zhang and Hongming Shan},
-  journal      = {CoRR},
-  volume       = {abs/2409.15936},
-  year         = {2024},
-  eprinttype    = {arXiv},
-  eprint       = {2409.15936},
+  booktitle = {ICASSP 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Hyderabad, India, April 06-11, 2025},
+  pages={1--5},
+  year = {2025}
 }
 ```
 
