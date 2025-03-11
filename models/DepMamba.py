@@ -1,8 +1,7 @@
-"""ConMamba encoder and Mamba decoder implementation.
-
+"""DepMamba implementation.
 Authors
 -------
-* Xilin Jiang 2024
+* Jiaxin Ye 2024
 """
 
 import warnings
