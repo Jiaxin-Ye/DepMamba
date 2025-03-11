@@ -47,22 +47,19 @@ git clone https://github.com/Jiaxin-Ye/DepMamba.git
 
 ### 2. Requirements
 
-Our code is based on Python 3.8 and CUDA 11.7. There are a few dependencies for running the code. The major libraries including Mamba and PyTorch are listed as follows:
+Our code is based on Python 3.10 and CUDA 12.1 (please modify it according to your setting). There are a few dependencies for running the code. The major libraries, including Mamba and PyTorch are listed as follows:
 
 ```bash
-conda create -n DepMamba -c conda-forge python=3.8
-conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+cd DepMamba
+conda create -n DepMamba -c conda-forge python=3.10
+conda activate DepMamba
+conda install pytorch==2.1 torchvision==0.16 torchaudio==2.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 conda install packaging
-git clone https://github.com/Dao-AILab/causal-conv1d.git 
-cd causal-conv1d 
-git checkout v1.1.3 
-CAUSAL_CONV1D_FORCE_BUILD=TRUE pip install .
-cd ..
-git clone https://github.com/state-spaces/mamba.git
-cd ./mamba
-git checkout v1.1.3
-MAMBA_FORCE_BUILD=TRUE pip install .
-pip install -r requirement.txt
+wget https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.5.0.post8/causal_conv1d-1.5.0.post8+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install causal_conv1d-1.5.0.post8+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+wget https://github.com/state-spaces/mamba/releases/download/v2.2.4/mamba_ssm-2.2.4+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install mamba_ssm-2.2.4+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install -r requirements.txt
 ```
 
 If you want to record training log, you need to login your own `wandb` account. 
