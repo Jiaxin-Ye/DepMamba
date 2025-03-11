@@ -18,7 +18,7 @@
 
 
 ### 📰 News
-* 21/12/2024 DepMamba has been accepted by the 50th ICASSP conference.
+* 21/12/2024 DepMamba has been accepted by the 50th ICASSP conference as an Oral pitch.
 * 25/09/2024 Released the arxiv version [paper](https://arxiv.org/abs/2409.15936).
 * 25/09/2024 Released the training code.
   
