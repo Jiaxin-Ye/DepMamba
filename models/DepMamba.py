@@ -345,6 +345,8 @@ class DepMamba(BaseNet):
 
     def __init__(self, audio_input_size=161, video_input_size=161, mm_input_size=128, mm_output_sizes=[256,64], d_ffn=1024, num_layers=8, dropout=0.1, activation='Swish', causal=False, mamba_config=None):
         super().__init__()
+        self.audio_input_size = audio_input_size
+        self.video_input_size = video_input_size
 
         self.cossm_encoder = CoSSM(num_layers,
                                          mm_input_size,
@@ -377,8 +379,8 @@ class DepMamba(BaseNet):
         
 
     def feature_extractor(self, x, padding_mask=None, a_inference_params = None, v_inference_params = None):
-        xa = x[:, :, 136:]
-        xv = x[:, :, :136]
+        xa = x[:, :, self.video_input_size:self.video_input_size + self.audio_input_size]
+        xv = x[:, :, :self.video_input_size]
         xa = self.conv_audio(xa.permute(0,2,1)).permute(0,2,1)
         xv = self.conv_video(xv.permute(0,2,1)).permute(0,2,1)
 
